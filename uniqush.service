@@ -1,0 +1,13 @@
+[Unit]
+Description=uniqush daemon
+After=network.target
+
+[Service]
+user=root
+WorkingDirectory=/usr/bin
+ExecStart=/usr/bin/uniqush-push
+
+[Install]
+WantedBy=multi-user.target
+
+
