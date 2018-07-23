@@ -6,7 +6,7 @@ RUN /usr/bin/yum -y install golang git gcc make mercurial-hgk wget
 ENV GOBIN /tmp/bin
 ENV GOPATH /tmp
 
-RUN go get github.com/uniqush/uniqush-push
+RUN go get github.com/sahibzadafahad99/uniqush-push
 
 COPY conf/uniqush-push.conf .
 
