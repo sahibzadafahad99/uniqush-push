@@ -93,7 +93,7 @@ func (prp *BinaryPushRequestProcessor) Finalize() {
 func (prp *BinaryPushRequestProcessor) GetMaxPayloadSize() int {
 	// https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/BinaryProviderAPI.html#//apple_ref/doc/uid/TP40008194-CH13-SW1
 	// > Variable length, less than or equal to 2 kilobytes
-	return 2048
+	return 4096
 }
 
 func (prp *BinaryPushRequestProcessor) SetErrorReportChan(errChan chan<- push.Error) {
