@@ -217,7 +217,7 @@ func (netConn *MockNetConn) ReadNotification() (notif *APNSNotificaton, err erro
 			panic(err)
 		}
 		if itemLength > 4096 {
-			panic(fmt.Errorf("The largest item len should be 2048, but got len of %d for item %d", itemLength, expectedId))
+			panic(fmt.Errorf("The largest item len should be 4096, but got len of %d for item %d", itemLength, expectedId))
 		}
 		if expectedItemLength > 0 && itemLength != expectedItemLength {
 			panic(fmt.Errorf("Expected item %d to have length %d, but the client passed a length of %d", expectedId, expectedItemLength, itemLength))
