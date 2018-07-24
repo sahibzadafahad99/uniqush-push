@@ -15,7 +15,7 @@ COPY uniqush.service /etc/systemd/system/
 RUN cp /tmp/bin/uniqush-push /usr/bin \
     && mkdir /etc/uniqush/ \
     && cp ./uniqush-push.conf /etc/uniqush/ \
-    && sed -i -e 's/localhost/0.0.0.0/' /etc/uniqush/uniqush-push.conf
+    && sed -i -e 's/localhost/192.168.0.7/' /etc/uniqush/uniqush-push.conf
 
 EXPOSE 9898
 
