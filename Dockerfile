@@ -12,10 +12,15 @@ RUN go get github.com/sahibzadafahad99/uniqush-push
 COPY conf/uniqush-push.conf .
 COPY uniqush.service /etc/systemd/system/
 
+
+
 RUN cp /tmp/bin/uniqush-push /usr/bin \
     && mkdir /etc/uniqush/ \
+    && mkdir /opt/uniqush/ \
     && cp ./uniqush-push.conf /etc/uniqush/ \
     && sed -i -e 's/localhost/192.168.0.7/' /etc/uniqush/uniqush-push.conf
+
+COPY uniqush/* /opt/uniqush/
 
 EXPOSE 9898
 
