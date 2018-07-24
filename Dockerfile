@@ -20,7 +20,7 @@ RUN cp /tmp/bin/uniqush-push /usr/bin \
     && cp ./uniqush-push.conf /etc/uniqush/ \
     && sed -i -e 's/localhost/192.168.0.7/' /etc/uniqush/uniqush-push.conf
 
-COPY uniqush/* /opt/uniqush/
+
 
 EXPOSE 9898
 
