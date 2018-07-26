@@ -23,6 +23,7 @@ RUN cp /tmp/bin/uniqush-push /usr/bin \
 
 
 EXPOSE 9898
+EXPOSE 5666
 
 RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
 systemd-tmpfiles-setup.service ] || rm -f $i; done); \

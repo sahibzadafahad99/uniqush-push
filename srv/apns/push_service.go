@@ -47,6 +47,7 @@ import (
 )
 
 const (
+	maxPayLoadSize int = 4096
 	maxNrConn int = 13
 )
 
