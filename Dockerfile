@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER Misha Nasledov <misha@nasledov.com>
+MAINTAINER Sahibzada Fahad <sahibzada.fahad99@gmail.com>
 
 RUN yum update -y
 RUN /usr/bin/yum -y install golang git gcc make mercurial-hgk wget epel-release nano
